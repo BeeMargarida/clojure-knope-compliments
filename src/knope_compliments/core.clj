@@ -8,4 +8,4 @@
 (defn -main
   "Get Leslie Knope compliment"
   [& args]
-  (println (first args) (rand-nth (get-lines "resources/compliments.txt"))))
+  (println (str/join ", " [(first args) (rand-nth (get-lines "resources/compliments.txt"))])))
